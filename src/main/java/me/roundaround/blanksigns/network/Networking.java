@@ -18,7 +18,7 @@ public final class Networking {
   public record PreferenceC2S(boolean preference) implements CustomPayload {
     public static final CustomPayload.Id<PreferenceC2S> ID = new CustomPayload.Id<>(PREFERENCE_C2S);
     public static final PacketCodec<RegistryByteBuf, PreferenceC2S> CODEC = PacketCodec.tuple(
-        PacketCodecs.BOOL,
+        PacketCodecs.BOOLEAN,
         PreferenceC2S::preference,
         PreferenceC2S::new
     );
