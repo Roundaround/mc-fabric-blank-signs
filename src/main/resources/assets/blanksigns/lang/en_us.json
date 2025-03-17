@@ -1,0 +1,11 @@
+{
+  "blanksigns.config.title": "Blank Signs Config",
+  "blanksigns.modEnabled.label": "Skip the edit screen when placing signs while sneaking",
+  "blanksigns.commands.reload": "Blank Signs config reloaded. Current state: %s.",
+  "blanksigns.commands.enable": "Blank Signs mod enabled.",
+  "blanksigns.commands.enable.server": "Blank Signs mod enabled. Players can now skip the sign edit screen.",
+  "blanksigns.commands.enable.noop": "Blank Signs mod already enabled.",
+  "blanksigns.commands.disable": "Blank Signs mod disabled.",
+  "blanksigns.commands.disable.server": "Blank Signs mod disabled. Players can no longer skip the sign edit screen.",
+  "blanksigns.commands.disable.noop": "Blank Signs mod already disabled."
+}
