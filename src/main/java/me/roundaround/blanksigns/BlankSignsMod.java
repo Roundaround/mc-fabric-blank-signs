@@ -5,7 +5,7 @@ import me.roundaround.blanksigns.network.Networking;
 import me.roundaround.blanksigns.server.PlayerPreferenceTracker;
 import me.roundaround.blanksigns.server.command.BlankSignsCommand;
 import me.roundaround.blanksigns.server.network.ServerNetworking;
-import me.roundaround.roundalib.gradle.api.annotation.Entrypoint;
+import me.roundaround.gradle.api.annotation.Entrypoint;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;

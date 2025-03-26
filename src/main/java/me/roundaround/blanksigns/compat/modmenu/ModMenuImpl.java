@@ -5,7 +5,7 @@ import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.roundaround.blanksigns.config.BlankSignsConfig;
 import me.roundaround.blanksigns.generated.Constants;
 import me.roundaround.blanksigns.roundalib.client.gui.screen.ConfigScreen;
-import me.roundaround.roundalib.gradle.api.annotation.Entrypoint;
+import me.roundaround.gradle.api.annotation.Entrypoint;
 
 @Entrypoint(Entrypoint.MOD_MENU)
 public class ModMenuImpl implements ModMenuApi {
