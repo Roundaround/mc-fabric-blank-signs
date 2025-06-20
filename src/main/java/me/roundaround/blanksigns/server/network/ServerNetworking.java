@@ -12,7 +12,7 @@ public final class ServerNetworking {
 
   private static void handlePreference(Networking.PreferenceC2S payload, ServerPlayNetworking.Context context) {
     final ServerPlayerEntity player = context.player();
-    player.server.execute(() -> {
+    context.server().execute(() -> {
       PlayerPreferenceTracker.getInstance().track(player, payload.preference());
     });
   }

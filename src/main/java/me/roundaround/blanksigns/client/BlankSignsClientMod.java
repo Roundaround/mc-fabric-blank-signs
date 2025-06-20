@@ -2,7 +2,6 @@ package me.roundaround.blanksigns.client;
 
 import me.roundaround.blanksigns.client.network.ClientNetworking;
 import me.roundaround.blanksigns.config.BlankSignsConfig;
-import me.roundaround.blanksigns.roundalib.util.Observable;
 import me.roundaround.gradle.api.annotation.Entrypoint;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
@@ -14,9 +13,7 @@ public class BlankSignsClientMod implements ClientModInitializer {
     ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> ClientNetworking.sendPreference(
         BlankSignsConfig.getInstance().modEnabled.getValue()));
 
-    BlankSignsConfig.getInstance().modEnabled.pendingValue.subscribe(
-        ClientNetworking::sendPreference,
-        Observable.SubscribeOptions.notEmittingImmediately()
-    );
+    BlankSignsConfig.getInstance().modEnabled.pendingValue.cold()
+        .subscribe(ClientNetworking::sendPreference);
   }
 }
